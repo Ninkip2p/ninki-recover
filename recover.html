@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ninki</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="js/bitcoinjs-min2.js" type="text/javascript"></script>
+    <script src="js/recover.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container aside-xxl">
+        <section class="m-b-lg">
+            <div class="list-group-item text-center">
+                <img src="images/ninki.png" width="200" height="150" />
+            </div>
+            <div class="alert alert-info">
+                <p class="h4">
+                    Alpha Version</p>
+                <p>
+                    To do:</p>
+                <ul>
+                    <li>Specify transaction fee</li>
+                    <li>Estimate number of friends</li>
+                    <li>Manually configure sweep depth</li>
+                </ul>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs font-bold">
+                        <li id="listep1" class="active"><a>Step 1</a></li>
+                        <li id="listep2"><a>Step 2</a></li>
+                        <li id="listep3"><a>Step 3</a></li>
+                        <li id="listep4"><a>Step 4</a></li>
+                        <li id="listep5"><a>Step 5</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Complete this wizard to recover your funds</p>
+                    <div class="line line-lg">
+                    </div>
+                    <h4>
+                        Recover your funds</h4>
+                    <div class="progress progress-xs m-t-md">
+                        <div id="prgsecwiz" class="progress-bar bg-info">
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="step1">
+                            <div class="text-center">
+                                <p>
+                                    Enter your cold wallet phrase</p>
+                                <div class="list-group-item bg-info">
+                                    <textarea class="form-control" placeholder="Enter your cold wallet phrase" rows="6"
+                                        id="txtCold"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="step2">
+                            <div class="text-center">
+                                <p>
+                                    Enter your hot wallet phrase</p>
+                                <div class="list-group-item bg-warning">
+                                    <textarea class="form-control" placeholder="Enter your hot wallet phrase" rows="6"
+                                        id="txtHot"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="step3">
+                            <div class="text-center">
+                                <p>
+                                    Enter your Ninki public key<br />
+                                    (you recieved this in an email when you created your account)
+                                </p>
+                                <div class="list-group-item bg-warning">
+                                    <textarea class="form-control" placeholder="Enter your Ninki public key" rows="6"
+                                        id="txtNinki"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="step4">
+                            <div class="list-group-item text-center">
+                                <h4>
+                                    Balance: <span class="balance"></span>
+                                </h4>
+                            </div>
+                            <div class="list-group-item text-center">
+                                <div id="prog" class="progress progress-xs m-t-sm">
+                                    <div id="progstatus" class="progress-bar bg-warning" data-toggle="tooltip" data-original-title="0%"
+                                        style="width: 0%">
+                                    </div>
+                                </div>
+                                <div id="progmess">
+                                </div>
+                                <div id="results">
+                                </div>
+                            </div>
+                            <div class="list-group-item text-center">
+                                <button type="button" class="btn btn-primary btn-block" id="btnSweep">
+                                    Sweep Address Space</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="step5">
+                            <div class="list-group-item text-center">
+                                <h4>
+                                    Balance: <span class="balance"></span>
+                                </h4>
+                            </div>
+                            <div class="list-group-item text-center">
+                                <div style="word-wrap: break-word" id="sendresults">
+                                </div>
+                            </div>
+                            <div class="list-group-item text-center">
+                                <input id="txtAddress" class="form-control" placeholder="Address to send funds to" /></div>
+                            <div class="list-group-item text-center">
+                                <button type="button" class="btn btn-primary btn-block" id="btnSend">
+                                    Claim Funds</button></div>
+                        </div>
+                    </div>
+                    <ul class="pager wizard m-b-sm">
+                        <li class="previous"><a href="#">Previous</a></li>
+                        <li class="next"><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
