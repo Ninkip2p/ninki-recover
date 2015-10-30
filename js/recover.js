@@ -245,7 +245,7 @@ $(document).ready(function () {
 
                     } else {
 
-                        if (knodeCounter > 5 && cbalance == 0) {
+                        if (knodeCounter > 50 && cbalance == 0) {
 
                             nodeCounter = 50001;
 
