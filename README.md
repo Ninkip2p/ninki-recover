@@ -2,6 +2,14 @@
 
 Download this repository to recover your bitcoins from Ninki Wallet using the online and offline key phrases and your master public key.
 
+What you need:
+
+* Your offline key phrase - a 12 word phrase (in older accounts this was 24 words and called cold key)
+* Your online key phrase - a 12 word phrase (in older accounts this was 24 words and called hot key)
+* Your master public key a long string beginning with xpub
+
+***If pasting the phrases from a password manager, be careful not to paste extra characters at the end of the phrase.***
+
 1. Enter your xpub and phrases
 2. Click next
 3. Click scan addresses
