@@ -1,6 +1,6 @@
 # ninki-recover
 
-Download this repository to recover your bitcoins from Ninki Wallet using the online and offline key phrases and your master public key.
+Download this repository (click on the 'Download zip' button to your right) to recover your bitcoins from Ninki Wallet using the online and offline key phrases and your master public key.
 
 Extract the downloaded zip file, run recover.html using Chrome browser
 
